@@ -4,7 +4,7 @@ import React, {Fragment, useEffect,useState} from 'react';
 import Product from './Product';
 import axios from 'axios';
 import SkeletonCard from '../../SkeletonCard';
-
+import "react-loading-skeleton/dist/skeleton.css";
 
 const CardProduct = () => {
     const [pro, setPro] = useState([]);

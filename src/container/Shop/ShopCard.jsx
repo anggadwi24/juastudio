@@ -1,15 +1,15 @@
-import React from 'react';
-import CardCategory from './CardShop/CardCategory';
-import CardProduct from './CardShop/CardProduct';
-import {  Link } from "react-router-dom";
+import React, { Fragment } from 'react';
+// import SkeletonCard from '../SkeletonCard';
+import ProdukCard from './Produk/ProdukCard';
+import Menu from './Menu';
 
 
 
-const Shop = () => {
-   
-   
-        return(
-            <section className="our-projects sp-one" id="shop">
+const ShopCard = () =>{
+    return(
+        <Fragment>
+            <Menu></Menu>
+            <section className="our-projects sp-one">
                 <div className="container">
                     <div className="sec-title">
                         <div className="big-title">Shop</div>
@@ -17,37 +17,39 @@ const Shop = () => {
                     </div>
                 </div>
 
-               
+            
                 <div className="masonry-gallery ml-25 mr-25">
                     <div className="container">
-                       
+                    
                         <div className="filters">
                             <ul className="filter-tabs-three filter-btns clearfix">
                                 <li className="active filter" data-role="button" data-filter=".all"><span>View All </span></li>
-                               
-                                <CardCategory/>
+                            
+                                
                                 
                                 
                             </ul>
                         </div>
                     </div>
                     <div className="container-fluid">
-                      
+                    
                         <div className="items-container row clearfix">
-                            <CardProduct/>
+                            <ProdukCard/>
                             
                         
-                          
+                        
 
                         </div>
-                        <div className="load-more text-center">  <Link to="/shop"  className="theme-btn btn-style-three">See More</Link> </div>
+                        <div className="load-more text-center">  <a href="/#"  className="theme-btn btn-style-three">See More</a> </div>
                     </div>              
 
                         
                 </div>
 
             </section>
-        )
-    }
+        </Fragment>
+       
+    )
+}
 
-export default Shop;
+export default ShopCard

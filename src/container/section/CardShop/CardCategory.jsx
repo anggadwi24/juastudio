@@ -2,7 +2,7 @@ import React, {Fragment, useEffect,useState} from 'react';
 import Category from './Category';
 import axios from 'axios';
 import Skeleton from 'react-loading-skeleton';
-
+import "react-loading-skeleton/dist/skeleton.css";
 const CardCategory = () => {
     const [cat, setCat] = useState([]);
     const [loading, setLoading] = useState(false);
