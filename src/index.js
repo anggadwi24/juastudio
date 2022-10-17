@@ -10,8 +10,10 @@ import importScript from './container/section/importScript';
 
 const Demo = props =>{
   importScript("assets/js/jquery.js");
-  importScript('http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js');
+  importScript("assets/js/jquery-ui.js");
+
   importScript("assets/js/bootstrap.min.js");
+  
   importScript("assets/plugins/revolution/js/jquery.themepunch.revolution.min.js");
   importScript("assets/plugins/revolution/js/jquery.themepunch.tools.min.js");
   importScript("assets/plugins/revolution/js/extensions/revolution.extension.actions.min.js");

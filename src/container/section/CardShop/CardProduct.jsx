@@ -1,40 +1,45 @@
-import React, {Component,Fragment} from 'react';
+
+
+import React, {Fragment, useEffect,useState} from 'react';
 import Product from './Product';
 import axios from 'axios';
+import SkeletonCard from '../../SkeletonCard';
 
-class CardProduct extends Component{
-    state ={
-        post:[]
-    }
-    componentDidMount(){
-    //    fetch('https://api.juastudio.com/api/product')
-    //         .then(response =>response.json())
-    //         .then(json => {
-    //             this.setState({
-    //                 post:json.data
-    //             })
-    //         })
+
+const CardProduct = () => {
+    const [pro, setPro] = useState([]);
+    const [loading, setLoading] = useState(false);
+    useEffect(() => {
+        setLoading(true);
         axios.get('https://api.juastudio.com/api/product/best')
         .then((result)=>{
-     
-            this.setState({
-                post:result.data.data
-            })
+            
+            setPro(result.data.data);
+          
+           setLoading(false);
         })
-    }
-    render() {
+      }, []);
+   
         return(
             <Fragment>
-                {
-                    this.state.post.map(post =>{
-               
-                      return   <Product key={post.slug} slug={post.slug} name={post.name} thumbnail={post.thumbnail} category={post.category} cat_slug={post.cat_slug}></Product>
-                    })
+                {loading && <SkeletonCard  />}
+                {!loading && 
+                  
+                    pro.map((post, index) => {
+                        return (
+                        
+                            <Product key={post.slug} slug={post.slug} name={post.name} thumbnail={post.thumbnail} category={post.category} cat_slug={post.cat_slug}></Product>
+                          
+                        );
+                      })
                 }
+                
             </Fragment>
+            
+           
         )
     }
-}
+
 
 export default CardProduct;
 

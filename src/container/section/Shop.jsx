@@ -1,8 +1,12 @@
-import React, {Component} from 'react';
+import React from 'react';
 import CardCategory from './CardShop/CardCategory';
 import CardProduct from './CardShop/CardProduct';
-class Shop extends Component{
-    render() {
+
+
+
+const Shop = () => {
+   
+   
         return(
             <section className="our-projects sp-one" id="shop">
                 <div className="container">
@@ -19,7 +23,9 @@ class Shop extends Component{
                         <div className="filters">
                             <ul className="filter-tabs-three filter-btns clearfix">
                                 <li className="active filter" data-role="button" data-filter=".all"><span>View All </span></li>
-                                <CardCategory></CardCategory>
+                               
+                                <CardCategory/>
+                                
                                 
                             </ul>
                         </div>
@@ -42,5 +48,5 @@ class Shop extends Component{
             </section>
         )
     }
-}
+
 export default Shop;

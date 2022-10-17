@@ -1,4 +1,4 @@
-import React, {Component, Fragment} from 'react';
+import React, {Fragment} from 'react';
 
 
 import Main from '../section/Main';
@@ -14,31 +14,16 @@ import Contact from '../section/Contact';
 
 
 
-
-
-class Home extends Component{
-
-    
+  const Home = () => {
+   
     
    
-    // componentDidMount(){
-        
-            
-          
-           
-      
-        
-       
-           
-      
-    // }
-    // componentDidUnmount (){
-        
-    // }
-    render(){
+  
     
         return (
         <Fragment>
+          
+           
             <div className="page-wrapper">
                 
                     <Main/>
@@ -50,14 +35,13 @@ class Home extends Component{
                     <Pricing></Pricing>
                     <Contact></Contact>
                 </div>
-               
-      
+           
         </Fragment>
                 
           
            
         )
-    }
+    
 }
 
 export default Home;
