@@ -1,0 +1,406 @@
+/* Bogor Appy - App Landing HTML Template*/
+
+@media only screen and (max-width: 2000px){
+	
+	.page-wrapper{
+		overflow:hidden;
+	}
+}
+
+@media only screen and (max-width: 1600px){
+	.main-header .main-box .outer-container {
+		display: block;
+	}
+	.main-header .main-box .logo-box {
+		position: relative;
+		left: 40px;
+	}
+	.main-header .info-options {
+		top: 10px;
+	}
+	.main-header.header-style-3 .info-options {
+		top: 50px;
+	}
+	.fixed-header .info-options {
+		padding: 0px !important;
+	}
+	.main-menu {
+		margin-left: 40px;
+	}
+}
+
+@media only screen and (max-width: 1400px){
+	.shop-banner:before{
+		display:none;
+	}
+	.services-block-one {
+		width: 33.333333333%;
+	}
+}
+
+@media only screen and (max-width: 1340px){
+	.main-menu .navigation > li:last-child > ul{
+		left:auto;
+		right:0px;	
+	}
+}
+
+@media only screen and (max-width: 1140px){
+	
+	.main-slider span.border,
+	.main-slider h2{
+		font-size:40px !important;
+		line-height:40px;	
+	}
+	
+	
+}
+
+@media only screen and (min-width: 992px){
+	.about-us .left-column {
+		float: left;
+	}
+	.about-us .right-column {
+		float: right;
+	}
+}
+@media only screen and (min-width: 768px){
+	.main-menu .navigation > li > ul,
+	.main-menu .navigation > li > ul > li > ul{
+		display:block !important;
+		visibility:hidden;
+		opacity:0;
+	}
+}
+
+@media only screen and (max-width: 1023px){
+	
+	.main-menu .navigation > li{
+		margin-left:10px;
+	}
+	
+	.main-header .nav-toggler{
+		display:block;
+	}
+	
+}
+
+@media only screen and (max-width: 991px){
+	.work-process-item .inner-box:before {
+		display: none;
+	}
+	.testimonial-block-one .author-info {
+	    margin-top: 0;
+	    padding-left: 104px;
+	}
+
+	.testimonial-block-one .content:before {
+	    top: 15px;
+	}
+	.slick-prev {
+		left: 10px;
+	}
+	.slick-next {
+		right: 50px;
+	}
+	.map-section .default-form-area {
+		position: relative;
+		bottom: 0;
+	}
+	.services-block-one {
+		width: 50%;
+	}
+	.sec-title .big-title {
+		font-size: 50px;
+		top: -12px;
+	}
+}
+
+@media only screen and (max-width: 767px){
+	
+	.header-upper .logo-outer {
+		position:relative;
+	}
+
+	.main-menu {
+		margin-left: 0px;
+	}
+
+	.main-header .main-box .logo-box .logo {
+	    padding: 20px 0px 25px;
+	    padding-right: 10px;
+	}
+
+	.main-header .main-box .logo-box {
+		left: 0;
+	}
+
+	.main-header .info-options {
+		display: none;
+	}
+
+	.main-header.header-style-3 .info-options {
+		display: block;
+		z-index: 999;
+	}
+	
+	
+	.sec-title h2{
+		font-size:26px;	
+	}
+	
+	.main-header .nav-outer{
+		position:relative;
+		width:100%;
+		margin-top:-54px;
+		top:2px;	
+	}
+	
+	.main-header .nav-outer .main-menu{
+		width:100%;	
+	}
+	
+	.main-menu .collapse {
+	   max-height:300px;
+		overflow:auto;
+		float:none;
+		width:100%;
+		padding:10px 0px 0px;
+		border:none;
+		margin:0px 0px 15px;
+		-ms-border-radius:3px;
+		-moz-border-radius:3px;
+		-webkit-border-radius:3px;
+		-o-border-radius:3px;
+		border-radius:3px;
+		box-shadow:none;
+   }
+   
+	.main-menu .collapse.in,
+	.main-menu .collapsing{
+		padding:10px 0px 0px;
+		border:none;
+		margin:0px 0px 15px;
+		-ms-border-radius:3px;
+		-moz-border-radius:3px;
+		-webkit-border-radius:3px;
+		-o-border-radius:3px;
+		border-radius:3px;
+		box-shadow:none;	
+	}
+	
+	.main-menu .navbar-header{
+		position:relative;
+		float:none;
+		display:block;
+		text-align:right;
+		width:100%;
+		padding: 0px 0px 25px;
+		right:0px;
+	}
+	
+	.main-menu .navbar-header .navbar-toggle{
+		display:inline-block;
+		z-index:20;
+		border:1px solid #fb2f4e;
+		float:none;
+		margin:0px 0px 0px 0px;
+		border-radius:0px;
+		background:#fb2f4e;
+	}
+	
+	.main-menu .navbar-header .navbar-toggle .icon-bar{
+		background:#ffffff;	
+	}
+	
+	.main-menu .navbar-collapse > .navigation{
+		float:none !important;
+		margin:0px !important;
+		width:100% !important;
+		
+		border:1px solid #ffffff;
+		border-top:none;
+	}
+	
+	.main-menu .navbar-collapse > .navigation > li{
+		margin:0px !important;
+		float:none !important;
+		padding:0px !important;
+		width:100%;
+	}
+	
+	.main-menu .navigation > li > a,
+	.main-menu .navigation > li > ul:before{
+		border:none;	
+	}
+	
+	.main-menu .navbar-collapse > .navigation > li > a{
+		padding:10px 10px !important;
+		border:none !important;
+		font-size:15px !important;
+	}
+	
+	.main-menu .navigation li.dropdown > a:after,
+	.main-menu .navigation > li.dropdown > a:before,
+	.main-menu .navigation > li > ul > li > a::before,
+	.main-menu .navigation > li > ul > li > ul > li > a::before{
+		color:#ffffff !important;
+		right:15px;
+		font-size:16px;
+		display:none !important;
+	}
+	
+	.main-menu .navbar-collapse > .navigation > li > ul,
+	.main-menu .navbar-collapse > .navigation > li > ul > li > ul{
+		position:relative;
+		border:none;
+		float:none;
+		visibility:visible;
+		opacity:1;
+		display:none;
+		margin:0px;
+		left:auto !important;
+		right:auto !important;
+		top:auto !important;
+		padding:0px;
+		outline:none;
+		width:100%;
+		background:#333333;
+		-webkit-border-radius:0px;
+		-ms-border-radius:0px;
+		-o-border-radius:0px;
+		-moz-border-radius:0px;
+		border-radius:0px;
+		transition:none !important;
+		-webkit-transition:none !important;
+		-ms-transition:none !important;
+		-o-transition:none !important;
+		-moz-transition:none !important;
+	}
+		
+	.main-menu .navbar-collapse > .navigation > li > ul,
+	.main-menu .navbar-collapse > .navigation > li > ul > li > ul{
+		border-top:1px solid rgba(255,255,255,1) !important;	
+	}
+	
+	.main-menu .navbar-collapse > .navigation > li,
+	.main-menu .navbar-collapse > .navigation > li > ul > li,
+	.main-menu .navbar-collapse > .navigation > li > ul > li > ul > li{
+		border-top:1px solid rgba(255,255,255,1) !important;
+		border-bottom:none;
+		opacity:1 !important;
+		top:0px !important;
+		left:0px !important;
+		visibility:visible !important;
+	}
+	
+	.main-menu .navbar-collapse > .navigation > li > ul > li:first-child,
+	.main-menu .navbar-collapse > .navigation > li > ul > li > ul > li:first-child{
+		border-top:none !important;	
+	}
+	
+	.main-menu .navbar-collapse > .navigation > li:first-child{
+		border:none;	
+	}
+	
+	.main-menu .navbar-collapse > .navigation > li > a,
+	.main-menu .navbar-collapse > .navigation > li > ul > li > a,
+	.main-menu .navbar-collapse > .navigation > li > ul > li > ul > li > a{
+		padding:10px 10px !important;
+		line-height:22px;
+		color:#ffffff;
+		background:#333333;
+		text-align:left;
+	}
+	
+	.main-menu .navbar-collapse > .navigation > li > a:hover,
+	.main-menu .navbar-collapse > .navigation > li > a:active,
+	.main-menu .navbar-collapse > .navigation > li > a:focus{
+		background:#fb2f4e;
+	}
+	
+	.main-menu .navbar-collapse > .navigation > li:hover > a,
+	.main-menu .navbar-collapse > .navigation > li > ul > li:hover > a,
+	.main-menu .navbar-collapse > .navigation > li > ul > li > ul > li:hover > a,
+	.main-menu .navbar-collapse > .navigation > li.current > a,
+
+	.main-menu .navbar-collapse > .navigation > li.current-menu-item > a{
+		background:#333333;
+		color:#ffffff !important;
+	}
+	
+	.main-menu .navbar-collapse > .navigation li.dropdown .dropdown-btn,
+	.header-style-two .nav-outer .btn-outer{
+		display:block;
+	}
+	
+	.main-menu .navbar-collapse > .navigation li.dropdown:after,
+	.main-menu .navigation > li > ul:before,
+	.main-slider .bordered-layer,
+	.featured-block-two .inner-box .number,
+	.testimonial-section .owl-nav,
+	.main-slider .text br{
+		display:none !important;	
+	}
+	
+	.fixed-header .info-options,
+	.testimonial-section .owl-carousel{
+		padding:0px !important;
+	}
+
+	.main-slider span.border,
+	.main-slider h2{
+		font-size:30px !important;
+		line-height:1.4em;	
+	}
+
+	.progress-levels .progress-box .inner .count-parcentage {
+		right: -50px;
+	}
+	
+
+	
+}
+
+@media only screen and (max-width: 599px){
+	
+	.main-header .search-box-outer .dropdown-menu{
+		left:0px;
+	}
+	
+	.main-slider span.border,
+	.main-slider h2{
+		font-size:20px !important;
+		line-height:2em;	
+	}
+	
+	.main-slider .text{
+		font-size:11px;
+	}
+	.services-block-one {
+		width: 100%;
+	}
+	.services-block-one .inner-box:after,
+	.services-block-one .inner-box:before {
+		display: none;
+	}
+	.sec-title .big-title {
+		font-size: 36px;
+		top: 0px;
+	}
+	.pricing-block-one .link-btn {
+	    position: relative;
+	    right: inherit;
+	    top: 0;
+	    margin-top: 20px;
+	}
+	
+}
+
+@media only screen and (max-width: 479px) {
+	
+	.main-header .nav-toggler{
+		top:0px;
+	}
+	
+}
