@@ -2093,6 +2093,7 @@ font-family: 'Raleway', sans-serif;*/
 	top: 50%;
 	font-size: 0px;
 	z-index: 99;
+	border:none !important
 }
 
 .slick-prev:before {
@@ -2113,6 +2114,7 @@ font-family: 'Raleway', sans-serif;*/
 	top: 50%;
 	font-size: 0px;
 	z-index: 99;
+	border:none !important
 }
 
 .slick-next:before {
