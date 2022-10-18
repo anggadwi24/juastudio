@@ -1,7 +1,7 @@
 import React from 'react';
 import CardCategory from './CardShop/CardCategory';
 import CardProduct from './CardShop/CardProduct';
-import {  Link } from "react-router-dom";
+// import {  Link } from "react-router-dom";
 
 
 
@@ -33,14 +33,13 @@ const Shop = () => {
                     </div>
                     <div className="container-fluid">
                       
-                        <div className="items-container row clearfix">
+                        
                             <CardProduct/>
                             
                         
                           
 
-                        </div>
-                        <div className="load-more text-center">  <Link to="/shop"  className="theme-btn btn-style-three">See More</Link> </div>
+                       
                     </div>              
 
                         

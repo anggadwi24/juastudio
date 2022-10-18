@@ -1,7 +1,8 @@
 import React, { Fragment } from 'react';
-// import SkeletonCard from '../SkeletonCard';
+import Script from '../../component/Script';
 import ProdukCard from './Produk/ProdukCard';
 import Menu from './Menu';
+import KategoriCard from './Kategori/KategoriCard';
 
 
 
@@ -24,8 +25,8 @@ const ShopCard = () =>{
                         <div className="filters">
                             <ul className="filter-tabs-three filter-btns clearfix">
                                 <li className="active filter" data-role="button" data-filter=".all"><span>View All </span></li>
-                            
-                                
+                                <KategoriCard></KategoriCard>
+                                    
                                 
                                 
                             </ul>
@@ -47,6 +48,7 @@ const ShopCard = () =>{
                 </div>
 
             </section>
+            <Script></Script>
         </Fragment>
        
     )

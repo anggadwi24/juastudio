@@ -5,11 +5,16 @@ import Product from './Product';
 import axios from 'axios';
 import SkeletonCard from '../../SkeletonCard';
 import "react-loading-skeleton/dist/skeleton.css";
+import {slice} from 'lodash';
+
 
 const CardProduct = () => {
     const [pro, setPro] = useState([]);
     const [loading, setLoading] = useState(false);
-    useEffect(() => {
+    const [isCompleted, setIsCompleted] = useState(false)
+    const [index, setIndex] = useState(8);
+    const initialPosts = slice(pro, 0, index)
+    const getData = ()=> {
         setLoading(true);
         axios.get('https://api.juastudio.com/api/product/best')
         .then((result)=>{
@@ -18,20 +23,46 @@ const CardProduct = () => {
           
            setLoading(false);
         })
+    }
+    const loadMore = () => {
+        setLoading(true);
+        setIndex(index + 8)
+        console.log(index)
+        if (index >= pro.length) {
+          setIsCompleted(true)
+        } else {
+          setIsCompleted(false)
+        }
+        setLoading(false);
+      }
+    useEffect(() => {
+        getData();
       }, []);
    
         return(
             <Fragment>
-                {loading && <SkeletonCard  />}
+               
+                <div className="items-container row clearfix">
                 {!loading && 
-                  
-                    pro.map((post, index) => {
+                
+                 
+                    
+                  initialPosts.map((pro) => {
                         return (
                         
-                            <Product key={post.slug} slug={post.slug} name={post.name} thumbnail={post.thumbnail} category={post.category} cat_slug={post.cat_slug}></Product>
+                            <Product key={pro.slug} slug={pro.slug} name={pro.name} thumbnail={pro.thumbnail} category={pro.category} cat_slug={pro.cat_slug}></Product>
                           
                         );
                       })
+                     
+                  
+                   
+                }
+                 {loading && <SkeletonCard  />}
+                </div>
+                {!isCompleted && pro.length >= index &&
+                    <div className="load-more text-center">  <button onClick={loadMore}  className="theme-btn btn-style-three">See More</button> </div>
+
                 }
                 
             </Fragment>

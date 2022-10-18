@@ -9,7 +9,7 @@ import Shop from '../section/Shop';
 import Team from '../section/Team';
 import Pricing from '../section/Pricing';
 import Contact from '../section/Contact';
-
+import Script from '../../component/Script';
 
 
 
@@ -35,7 +35,7 @@ import Contact from '../section/Contact';
                     <Pricing></Pricing>
                     <Contact></Contact>
                 </div>
-           
+                <Script></Script>
         </Fragment>
                 
           

@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {  Link } from "react-router-dom";
+
 class Menu extends Component{
     render() {
         return(
@@ -31,14 +31,14 @@ class Menu extends Component{
                                 <div className="navbar-collapse collapse scroll-nav clearfix">
                                     <ul className="navigation clearfix">
                                         
-                                        <li ><Link to="/" >Home</Link></li>
-                                        <li><Link to="/#aboutus">About Us</Link></li>
-                                        <li><Link to="/#services">Services</Link></li>
+                                        <li ><a href="/" >Home</a></li>
+                                        <li><a href="/#aboutus">About Us</a></li>
+                                        <li><a href="/#services">Services</a></li>
                                         <li className="current"><a href="/#">Shop</a></li>
-                                        <li><Link to="/#team">Team</Link></li>
-                                        <li><Link to="/#pricing">Pricing</Link></li>
+                                        <li><a href="/#team">Team</a></li>
+                                        <li><a href="/#pricing">Pricing</a></li>
                                        
-                                        <li><Link to="/#contact">Contact</Link></li>
+                                        <li><a href="/#contact">Contact</a></li>
     
                                      </ul>
                                 </div>
