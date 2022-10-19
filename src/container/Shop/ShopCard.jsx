@@ -3,7 +3,7 @@ import Script from '../../component/Script';
 import ProdukCard from './Produk/ProdukCard';
 import Menu from './Menu';
 import KategoriCard from './Kategori/KategoriCard';
-
+import Contact from '../section/Contact';
 
 
 const ShopCard = () =>{
@@ -34,20 +34,19 @@ const ShopCard = () =>{
                     </div>
                     <div className="container-fluid">
                     
-                        <div className="items-container row clearfix">
+                       
                             <ProdukCard/>
                             
                         
                         
 
-                        </div>
-                        <div className="load-more text-center">  <a href="/#"  className="theme-btn btn-style-three">See More</a> </div>
                     </div>              
 
                         
                 </div>
 
             </section>
+            <Contact></Contact>
             <Script></Script>
         </Fragment>
        

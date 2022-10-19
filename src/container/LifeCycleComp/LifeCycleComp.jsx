@@ -13,6 +13,7 @@ class LifeCycleComp extends Component {
         console.log('getDerivedStateFromProps');
         return null;
     }
+    
 
     componentDidMount(){
         console.log('componentDidMount');

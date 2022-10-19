@@ -30,9 +30,9 @@ const Script = props =>{
     importScript("/assets/js/slick.js");
     importScript("/assets/js/mixitup.js");
     importScript("/assets/js/script.js");
-    // importScript("https://maps.googleapis.com/maps/api/js?key=AIzaSyAV0e-lFppqNT9E_ZmGzYNQ0Qst92QODxw"); 
-    // importScript("/assets/js/gmaps.js");
-    // importScript("/assets/js/map-script.js");
+
+
+    
   }
 
   export default Script

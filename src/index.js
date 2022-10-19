@@ -6,7 +6,7 @@ import reportWebVitals from './reportWebVitals';
 import Home from './container/Home/Home';
 import Shop from './container/Shop/ShopCard';
 import NoPage from './container/NoPage';
-
+import Detail from './container/Detail/Detail';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 
@@ -21,6 +21,7 @@ root.render(
         
           <Route exact  path="/"  element={<Home />} />
           <Route exact  path="/shop" element={<Shop />} />
+          <Route exact  path="/shop/:slug" element={<Detail />} />
        
 
           <Route exact path="*" element={<NoPage />} />
