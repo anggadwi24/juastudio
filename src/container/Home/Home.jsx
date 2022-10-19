@@ -11,6 +11,8 @@ import Pricing from '../section/Pricing';
 import Contact from '../section/Contact';
 import Script from '../../component/Script';
 
+import { Helmet } from 'react-helmet';
+
 
 
 
@@ -23,7 +25,10 @@ import Script from '../../component/Script';
         return (
         <Fragment>
           
-           
+          <Helmet>
+            <title>Nested Title</title>
+            <meta name="description" content="Nested component" />
+        </Helmet>
             <div className="page-wrapper">
                 
                     <Main/>
