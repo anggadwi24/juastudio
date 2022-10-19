@@ -1,4 +1,4 @@
-import React, {Fragment} from 'react';
+import React, {Fragment,useEffect} from 'react';
 
 
 import Main from '../section/Main';
@@ -12,13 +12,16 @@ import Contact from '../section/Contact';
 import Script from '../../component/Script';
 
 import { Helmet } from 'react-helmet';
+import ReactGA from 'react-ga';
+const TRACKING_ID = "UA-246125311-1";
 
-
-
+ReactGA.initialize(TRACKING_ID);
 
   const Home = () => {
    
-    
+    useEffect(() => {
+      ReactGA.pageview(window.location.pathname + window.location.search);
+    }, []);
         
   
     
