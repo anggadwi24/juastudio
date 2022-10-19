@@ -8,6 +8,7 @@ import DOMPurify from 'dompurify';
 import OwlCarousel from 'react-owl-carousel';
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
+import { Helmet } from 'react-helmet';
 
 const ProdukDetail = () =>{
     const [pro, setPro] = useState([]);
@@ -39,10 +40,27 @@ const ProdukDetail = () =>{
     return (
         
         <Fragment>
-            {loading && <SkeletonDetail/>}
+            
+            {loading && <SkeletonDetail/> &&   <Helmet>
+                   
+                   <title>JUA STUDIO </title>
+                   
+                 
+                </Helmet>}
             {!loading && status &&
-          
-             <section className="sidebar-page-container projects-details" key={pro.slug}>
+             <Fragment>
+                 <Helmet>
+                   
+                    <title>{pro.name+' | JUA STUDIO'} </title>
+                    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+
+                    
+
+                    <meta name="description" content="Jual Totebag Bali"/> 
+                    <meta name="keywords" content={pro.slug}/>
+                  
+                 </Helmet>
+                 <section className="sidebar-page-container projects-details" key={pro.slug}>
                      <div className="container">
                         <OwlCarousel className='owl-theme owl-nav-none owl-dot-style-one mb-30' items={1} loop={true} margin={0} animateOut={'fadeout'} smartSpeed={1000} autoplay={5000} navText={ [ '<span class="fa fa-angle-left"></span>', '<span class="fa fa-angle-right"></span>' ]} responsive={[]}>
 
@@ -106,10 +124,19 @@ const ProdukDetail = () =>{
                          </div>
                      </div>
                  </section>
+             </Fragment>
+            
          
              }
              {!loading && !status && 
-                 <Notfound/>
+             <Fragment>
+
+                    <Helmet>
+                    
+                    <title>JUA STUDIO </title>
+                    </Helmet>
+                    <Notfound/>
+              </Fragment>
              }
             
         </Fragment>

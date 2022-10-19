@@ -8,7 +8,7 @@ class Team extends Component{
             <Fragment>
                 <section className="testimonial sp-one" style={{backgroundImage:`url('assets/images/gallery/img5.png')`}}>
                     <div className="container">
-                        <OwlCarousel className="single-item-carousel owl-carousel owl-theme owl-nav-none owl-dot-style-three" items={1} loop={true} margin={0} nav animateOut={'fadeOut'} smartSpeed={1000} autoPlay={5000} navText={ [ '<span class="fa fa-angle-left"></span>', '<span class="fa fa-angle-right"></span>' ]}>
+                        <OwlCarousel className=" owl-carousel owl-theme owl-nav-none owl-dot-style-three" items={1} loop={true} margin={0} nav animateOut={'fadeOut'} smartSpeed={1000} autoPlay={5000} navText={ [ '<span class="fa fa-angle-left"></span>', '<span class="fa fa-angle-right"></span>' ]}>
                       
                             <div className="testimonial-block-one">
                                 <div className="row">
