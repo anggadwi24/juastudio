@@ -17,7 +17,7 @@ import Script from '../../component/Script';
   const Home = () => {
    
     
-   
+        
   
     
         return (

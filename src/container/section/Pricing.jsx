@@ -1,7 +1,16 @@
 import React, {Component} from 'react';
-
+import Slider from "react-slick";
 class Pricing extends Component{
     render(){
+        var setting = {
+            centerMode: true,
+            centerPadding: '60px',
+            
+            slidesToShow: 1,
+            // autoplay: true,
+       
+            slidesToScroll: 1,
+        }
         return(
             <section className="pricing grey-bg" id="pricing">
                 <div className="container">
@@ -12,10 +21,10 @@ class Pricing extends Component{
                     </div>
                 </div>
                 <div className="outer-box">
-                    <div className="pricing-slider">
+                        <Slider {...setting} >
                         <div className="pricing-block-one">
                             <h4>Starter Website </h4>
-                            <div className="price"><span>START </span> 3JT<sub></sub></div>
+                            <div className="price"><span>MULAI </span> 3JT<sub></sub></div>
                             <div className="row">
                                 <div className="col-sm-6">
                                     <ul>
@@ -32,11 +41,11 @@ class Pricing extends Component{
                                     </ul>
                                 </div>
                             </div>
-                            <div className="link-btn"><a href="/#" className="theme-btn btn-style-three">Choose Plan</a></div>
+                            <div className="link-btn"><a href="https://wa.me/6287774156930?text=Saya Tertarik Dengan Starter Website" className="theme-btn btn-style-three">Choose Plan</a></div>
                         </div>
-                        <div className="pricing-block-one">
+                        <div className="pricing-block-one" >
                             <h4>Advance Website</h4>
-                            <div className="price"><span>START</span>5JT<sub></sub></div>
+                            <div className="price"><span>MULAI</span>5JT<sub></sub></div>
                             <div className="row">
                                 <div className="col-sm-6">
                                     <ul>
@@ -55,11 +64,11 @@ class Pricing extends Component{
                                     </ul>
                                 </div>
                             </div>
-                            <div className="link-btn"><a href="/#" className="theme-btn btn-style-three">Choose Plan</a></div>
+                            <div className="link-btn"><a href="https://wa.me/6287774156930?text=Saya Tertarik Dengan Advance Website" className="theme-btn btn-style-three">Choose Plan</a></div>
                         </div>
-                        <div className="pricing-block-one">
+                        <div className="pricing-block-one"  >
                             <h4>Expert Website</h4>
-                            <div className="price"><span>START</span>10JT<sub></sub></div>
+                            <div className="price"><span>MULAI</span>10JT<sub></sub></div>
                             <div className="row">
                                 <div className="col-sm-6">
                                     <ul>
@@ -79,12 +88,12 @@ class Pricing extends Component{
                                     </ul>
                                 </div>
                             </div>
-                            <div className="link-btn"><a href="/#" className="theme-btn btn-style-three">Choose Plan</a></div>
+                            <div className="link-btn"><a href="https://wa.me/6287774156930?text=Saya Tertarik Dengan Expert Website" className="theme-btn btn-style-three">Choose Plan</a></div>
                         </div>
                        
-                            
+                    </Slider>   
                     </div>
-                </div>
+               
                     
             </section>
     

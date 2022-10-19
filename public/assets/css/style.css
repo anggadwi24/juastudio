@@ -1381,11 +1381,15 @@ font-family: 'Raleway', sans-serif;*/
 }
 
 /* slick slider page nav */
+.slick-slide {
+	padding: 30px 40px;
+  }
+  
 
 .slick-dots {
 	display: inline-block;
 	position: relative;
-	top: -60px;
+	/* top: -60px; */
 }
 
 .slick-dots li {
@@ -1399,11 +1403,17 @@ font-family: 'Raleway', sans-serif;*/
     font-weight:  500;
     color: #e9e9e9;
     padding-bottom: 4px;
+	border: none !important;
+
 }
 
 .slick-dots li.slick-active button {
 	color: #242424;
-	border-bottom: 2px solid #70a67c;
+	border-left: none !important;
+	border-top: none !important;
+	border-right: none !important;
+
+	border-bottom: 2px solid #70a67c !important;
 }
 
 /*
@@ -1564,8 +1574,10 @@ font-family: 'Raleway', sans-serif;*/
 
 .services-block-two .inner-box{
 	position:relative;
+	padding: 10px;
 	text-align:center;
 	background:  #fff;
+	border-radius: 30px;
 	border-bottom: 1px solid #f2f2f2;
 }
 
@@ -1623,6 +1635,7 @@ font-family: 'Raleway', sans-serif;*/
 	opacity: 0;
 	visibility: hidden;
 	transition: .5s ease;
+	border-radius: 30px;
 	transform: translate(0,-50px) scale(0.8);
 }
 

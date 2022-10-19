@@ -4,8 +4,11 @@ import axios from 'axios';
 import "react-loading-skeleton/dist/skeleton.css";
 import SkeletonDetail from './SkeletonDetail';
 import Notfound from './Notfound';
+import DOMPurify from 'dompurify';
+import OwlCarousel from 'react-owl-carousel';
+import 'owl.carousel/dist/assets/owl.carousel.css';
+import 'owl.carousel/dist/assets/owl.theme.default.css';
 
-import DOMPurify from 'dompurify'
 const ProdukDetail = () =>{
     const [pro, setPro] = useState([]);
     const [image, setImage] = useState([]);
@@ -32,14 +35,19 @@ const ProdukDetail = () =>{
 
         })
       }, [slug]);
+   
     return (
+        
         <Fragment>
             {loading && <SkeletonDetail/>}
             {!loading && status &&
           
              <section className="sidebar-page-container projects-details" key={pro.slug}>
                      <div className="container">
-                         <div className="single-item-carousel owl-carousel owl-theme owl-nav-none owl-dot-style-one mb-30">
+                        <OwlCarousel className='owl-theme owl-nav-none owl-dot-style-one mb-30' items={1} loop={true} margin={0} animateOut={'fadeout'} smartSpeed={1000} autoplay={5000} navText={ [ '<span class="fa fa-angle-left"></span>', '<span class="fa fa-angle-right"></span>' ]} responsive={[]}>
+
+                       
+                       
                              {  image.map((img,index) => {
                                  return (
                                 
@@ -48,7 +56,7 @@ const ProdukDetail = () =>{
                                  );
                              })
                          }
-                         </div>
+                          </OwlCarousel>
                          <h2>{pro.name}</h2>
                          <div className="row">
                              <div className="col-md-9">
@@ -62,10 +70,10 @@ const ProdukDetail = () =>{
                              <div className="info-column col-md-3">
                                  <div className="inner-column">
                                      <ul>
-                                         <li><span>Category :</span>{pro.category}</li>
+                                         <li><span>Kategori :</span>{pro.category}</li>
                                          <li><span>Stok :</span>{pro.qty} pcs</li>
                                          <li>
-                                             <span>Price :</span>
+                                             <span>Harga :</span>
                                              {pro.discount > 0 && pro.disc_percent > 0 &&
                                                  pro.price
                                              } {pro.discount <= 0 && pro.disc_percent <= 0 && pro.price}

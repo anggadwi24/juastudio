@@ -540,6 +540,7 @@ element css
 	border: 1px solid #f7f7f7;
 	font-family: 'Raleway', sans-serif;
 	cursor:  pointer;
+	height: auto !important;
 }
 
 .btn-style-fifteen:hover {

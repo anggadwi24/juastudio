@@ -32,13 +32,13 @@ class Menu extends Component{
                                     <ul className="navigation clearfix">
                                         
                                         <li ><a href="/" >Home</a></li>
-                                        <li><a href="/#aboutus">About Us</a></li>
-                                        <li><a href="/#services">Services</a></li>
-                                        <li ><a href="/shop">Shop</a></li>
+                                        <li><a href="/#aboutus">Tentang Kami</a></li>
+                                        <li><a href="/#services">Layanan</a></li>
+                                        <li className="current"><a href="/#">Shop</a></li>
                                         <li><a href="/#team">Team</a></li>
                                         <li><a href="/#pricing">Pricing</a></li>
                                        
-                                        <li><a href="/#contact">Contact</a></li>
+                                        <li><a href="/#contact">Kontak Kami</a></li>
     
                                      </ul>
                                 </div>
@@ -49,7 +49,7 @@ class Menu extends Component{
     
                         
                         <div className="info-options">
-                            <span>Contact us on:</span>
+                            <span>Hubungi Kami:</span>
                             <ul className="social-icon-one">
                                 <li><a href="https://instagram.com/juastd"><span className="fa fa-instagram"></span></a></li>
                                 <li><a href="https://wa.me/6287774156930">  <span className="fa fa-whatsapp"></span></a></li>
