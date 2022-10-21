@@ -9,6 +9,8 @@ import OwlCarousel from 'react-owl-carousel';
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
 import { Helmet } from 'react-helmet';
+import { Link } from 'react-router-dom';
+
 
 const ProdukDetail = () =>{
     const [pro, setPro] = useState([]);
@@ -104,9 +106,12 @@ const ProdukDetail = () =>{
                          <div className="project-pagination">    
                              <div className="row">
                                  <div className="col-md-4 col-sm-4 col-xs-4">
-                                     <div className="button prev pull-left">
-                                         <a href="/#"><i className="fa fa-angle-left" aria-hidden="true"></i>&nbsp;&nbsp;Prev</a>    
-                                     </div>
+                                    {pro.previous != null &&
+                                        <div className="button prev pull-left">
+                                            <Link to={'/shop/'+pro.previous.product_slug}><i className="fa fa-angle-left" aria-hidden="true"></i>&nbsp;&nbsp;Prev</Link>    
+                                        </div>
+                                    }
+                                    
                                  </div>
                                  <div className="col-md-4 col-sm-4 col-xs-4">
                                      <div className="icon-box text-center">
@@ -116,9 +121,13 @@ const ProdukDetail = () =>{
                                      </div>
                                  </div>
                                  <div className="col-md-4 col-sm-4 col-xs-4">
-                                     <div className="button next pull-right">
-                                         <a href="/#">Next &nbsp;&nbsp;<i className="fa fa-angle-right" aria-hidden="true"></i></a>    
-                                     </div>
+                                     {pro.next != null &&
+                                         <div className="button next pull-right">
+                                         <Link to={'/shop/'+pro.next.product_slug}>Next &nbsp;&nbsp;<i className="fa fa-angle-right" aria-hidden="true"></i></Link>    
+                                        </div>
+                                       
+                                    }
+                                     
                                  </div>
                              </div>                    
                          </div>

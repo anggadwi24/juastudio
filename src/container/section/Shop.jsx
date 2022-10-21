@@ -21,7 +21,7 @@ const Shop = () => {
     const [isCompleted, setIsCompleted] = useState(false)
     const [index, setIndex] = useState(8);
     const initialPosts = slice(pro, 0, index)
-    const [filters, updateFilters] = useState('all');
+
  
     // Filter change handler
   
