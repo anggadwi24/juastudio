@@ -127,12 +127,12 @@
 		},{accY: 0});
 	}
 
-	$('.pricing-slider').slick({
-	  centerMode: true,
-	  centerPadding: '0px',
-	  slidesToShow: 1,
-	  autoplay: true
-	});
+	// $('.pricing-slider').slick({
+	//   centerMode: true,
+	//   centerPadding: '0px',
+	//   slidesToShow: 1,
+	//   autoplay: true
+	// });
 		
 	
 	//Single Item Carousel
@@ -510,15 +510,15 @@
 	}
 
 	// Slick Slide
-	$('.slider-nav').slick({
-		slidesToShow: 1,
-		slidesToScroll: 1,
-		dots: true,
-		arrows: false,
-		fade: true,
-		autoplay: true,
-		focusOnSelect: true
-	});
+	// $('.slider-nav').slick({
+	// 	slidesToShow: 1,
+	// 	slidesToScroll: 1,
+	// 	dots: true,
+	// 	arrows: false,
+	// 	fade: true,
+	// 	autoplay: true,
+	// 	focusOnSelect: true
+	// });
 
 
 	//Progress Bar / Levels

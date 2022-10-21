@@ -98,10 +98,10 @@
 	    top: 15px;
 	}
 	.slick-prev {
-		left: 10px;
+		left: 20px;
 	}
 	.slick-next {
-		right: 50px;
+		right: 0;
 	}
 	.map-section .default-form-area {
 		position: relative;

@@ -2075,7 +2075,7 @@ font-family: 'Raleway', sans-serif;*/
 	background: #fff;
 	box-shadow: 0px 5px 32px 0px rgba(0, 0, 0, 0.08);
 	padding: 50px;
-	margin: 30px 65px;
+	/* margin: 30px 65px; */
 }
 
 .pricing-block-one:before {
@@ -2102,7 +2102,7 @@ font-family: 'Raleway', sans-serif;*/
 
 .slick-prev {
 	position: absolute;
-	left: -25px;
+	left:14px;
 	top: 50%;
 	font-size: 0px;
 	z-index: 99;
@@ -2123,7 +2123,7 @@ font-family: 'Raleway', sans-serif;*/
 
 .slick-next {
 	position: absolute;
-	right: 20px;
+	right: 0;
 	top: 50%;
 	font-size: 0px;
 	z-index: 99;

@@ -21,7 +21,8 @@ const CardCategory = () => {
             <Fragment>
                 {loading && <Skeleton  animation="wave" />}
                 {!loading && 
-                  
+                    
+                    
                     cat.map((post, index) => {
                         return (
                         
@@ -29,6 +30,7 @@ const CardCategory = () => {
                           
                         );
                       })
+               
                 }
                 
             </Fragment>

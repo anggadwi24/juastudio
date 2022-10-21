@@ -63,8 +63,8 @@ class Team extends Component{
                         <div className="row justify-content-center">
                             <div className="col-md-3 col-sm-6 team-block-one">
                                 <div className="inner-box">
-                                    <div className="image"><img src="https://media-exp1.licdn.com/dms/image/C5603AQH2tyT6Yt_64Q/profile-displayphoto-shrink_200_200/0/1662342979692?e=2147483647&v=beta&t=o5-KQ31VNjwMgMfHdwdS4U1JiETE_OnNpiZguKLYt2c" alt=""/></div>
-                                    <div className="lower-content">
+                                    <div className="image"><img src="https://media-exp1.licdn.com/dms/image/C5603AQH2tyT6Yt_64Q/profile-displayphoto-shrink_200_200/0/1662342979692?e=2147483647&v=beta&t=o5-KQ31VNjwMgMfHdwdS4U1JiETE_OnNpiZguKLYt2c" alt="" className='center-block'/></div>
+                                    <div className="lower-content text-center">
                                         <div className="designation"><a href='/#'>Programmer</a></div>
                                         <h4>Angga Dwi</h4>
                                         <ul className="social-link">
@@ -87,8 +87,8 @@ class Team extends Component{
                             </div>
                             <div className="col-md-3 col-sm-6 team-block-one">
                                 <div className="inner-box">
-                                    <div className="image"><img src="https://scontent.fdps6-1.fna.fbcdn.net/v/t1.6435-1/123833170_3636329153084596_8481072616056646109_n.jpg?stp=dst-jpg_s200x200&_nc_cat=110&ccb=1-7&_nc_sid=7206a8&_nc_eui2=AeHhB42wO5EsMMKpT1jPkEYhZDPiUTCoNZtkM-JRMKg1m8-_EWUbve-y610KBYyLHUhMAX_rz5jtFvhInGeaHqaU&_nc_ohc=WeWHolLYjwUAX8YssZ7&_nc_ht=scontent.fdps6-1.fna&oh=00_AT-F_NnlHgTsED1JlUsnsABvKiErZ2dhughFx_ydyEmJ3w&oe=6375C5BA" alt=""/></div>
-                                    <div className="lower-content">
+                                    <div className="image"><img className="center-block" src="https://scontent.fdps6-1.fna.fbcdn.net/v/t1.6435-1/123833170_3636329153084596_8481072616056646109_n.jpg?stp=dst-jpg_s200x200&_nc_cat=110&ccb=1-7&_nc_sid=7206a8&_nc_eui2=AeHhB42wO5EsMMKpT1jPkEYhZDPiUTCoNZtkM-JRMKg1m8-_EWUbve-y610KBYyLHUhMAX_rz5jtFvhInGeaHqaU&_nc_ohc=WeWHolLYjwUAX8YssZ7&_nc_ht=scontent.fdps6-1.fna&oh=00_AT-F_NnlHgTsED1JlUsnsABvKiErZ2dhughFx_ydyEmJ3w&oe=6375C5BA" alt=""/></div>
+                                    <div className="lower-content text-center">
                                         <div className="designation"><a href="/#">Designer</a></div>
                                         <h4>Diki Alwi</h4>
                                         <ul className="social-link">

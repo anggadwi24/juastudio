@@ -4,12 +4,9 @@ class Pricing extends Component{
     render(){
         var setting = {
             centerMode: true,
-            centerPadding: '60px',
-            
+            centerPadding: '0px',
             slidesToShow: 1,
-            // autoplay: true,
-       
-            slidesToScroll: 1,
+            // autoplay: true
         }
         return(
             <section className="pricing grey-bg" id="pricing">

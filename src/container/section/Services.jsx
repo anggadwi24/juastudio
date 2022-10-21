@@ -5,6 +5,31 @@ import 'owl.carousel/dist/assets/owl.theme.default.css';
 
 class Services extends Component{
     render() {
+        var options = {
+            loop:true,
+			margin:30,
+			nav:true,
+			smartSpeed: 700,
+			autoplay: 5000,
+			navText: [ '<span class="fa fa-angle-left"></span>', '<span class="fa fa-angle-right"></span>' ],
+			responsive:{
+				0:{
+					items:1
+				},
+				600:{
+					items:1
+				},
+				800:{
+					items:2
+				},
+				1024:{
+					items:3
+				},
+				1200:{
+					items:3
+				},
+			}
+        }
         return(
             <Fragment>
                
@@ -14,7 +39,7 @@ class Services extends Component{
                             <div className="big-title" style={{color:'#c1c1c17a'}}>Layanan Kami</div>
                             <h2 style={{color:'#efefef'}}>Layanan Kami</h2>
                         </div>
-                        <OwlCarousel className="owl-carousel owl-theme owl-nav-none owl-dot-style-three" items={3} loop={true} margin={30} nav animateOut={'fadeOut'} smartSpeed={700} autoPlay={5000} navText={ [ '<span class="fa fa-angle-left"></span>', '<span class="fa fa-angle-right"></span>' ]}>
+                        <OwlCarousel className="owl-carousel owl-theme owl-nav-none owl-dot-style-three" {...options}>
                         
                         
                             <div className="services-block-two">

@@ -21,13 +21,13 @@ const Script = props =>{
   
     importScript("/assets/js/main-slider-script.js");
     importScript("/assets/js/jquery.fancybox.js");
-    importScript("/assets/js/owl.js");
+    // importScript("/assets/js/owl.js");
     importScript("/assets/js/pagenav.js");
     importScript("/assets/js/validate.js");
     importScript("/assets/js/jquery.easing.min.js");
     importScript("/assets/js/wow.js");
     importScript("/assets/js/appear.js");
-    importScript("/assets/js/slick.js");
+    // importScript("/assets/js/slick.js");
     importScript("/assets/js/mixitup.js");
     importScript("/assets/js/script.js");
 
